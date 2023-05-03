@@ -31,7 +31,7 @@
             <div id="about-content">
                 <div class="about-img"><img class="eunice" src="images/eunice.png" alt="eunice profile photo"></div>
                 <div class="about-bio">
-                    <h3>Hi there!</h3>
+                    <span id="typedSpan"><h3>Hi there!</h3></span>
                     <h4>I'm a rising sophomore at Carnegie Mellon. I'm interested in product development, research, and user experience.</h4>
                     <h4>Feel free to reach out to me!</h4>
                     <button onclick="window.open('resume.pdf');">Resume</button>
@@ -59,4 +59,11 @@
     <script src="js/jquery.lettering.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r123/three.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.21/vanta.birds.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+            var typed=new Typed('#typedSpan',{
+                strings:['Hi there!'],
+                typeSpeed:75,
+            });
+      </script>
 </html>

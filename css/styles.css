@@ -32,6 +32,13 @@ h3{
     width:fit-content;
     margin-bottom:0%;
 }
+#typedSpan{
+    font-size:6em;
+    color:white;
+    font-family:'Inter', sans-serif;
+    width:fit-content;
+    margin-bottom:0%;
+}
 h4{
     font-size:3em;
     font-family:'Inter', sans-serif;
