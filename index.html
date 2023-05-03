@@ -14,12 +14,25 @@
         <title>Eunice Lee 🤍 </title>
 
         <script src="js/script.js"></script>
-        <script src="js/jquery-3.6.4.min.js"></script>
-        <script src="js/jquery.lettering.js"></script>
-        <script type="module" src="js/three.min.js"></script>
-        <script src="particles.js"></script>
+        <!-- <script src="js/jquery-3.6.4.min.js"></script>
+        <script src="js/jquery.lettering.js"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r123/three.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.21/vanta.birds.min.js"></script>
+        <script>
+            VANTA.BIRDS({
+              el: "#VANTAjs",
+              mouseControls: true,
+              touchControls: true,
+              gyroControls: false,
+              minHeight: 200.00,
+              minWidth: 200.00,
+              scale: 1.00,
+              scaleMobile: 1.00
+            })
+            </script>
+            
     </head>
-    <body id="particles-js">
+    <body>
         <header>
             <h2>eunice lee</h2>
         </header>
@@ -28,7 +41,7 @@
             <div class="nav-select"><a href="school.html"><p>school</p></a></div>
             <div class="nav-select"><a href="projects.html"><p>projects</p></a></div>
         </nav>
-        <div id="container">
+        <div id="VANTAjs">
             <h1>welcome to<br>the euniverse</h1>
         </div>
         <footer>
