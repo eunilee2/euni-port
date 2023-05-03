@@ -1,12 +1,11 @@
 h1,h2,h3,h4,p{
     color:white;
 }
-a:link, a:visited{
+a{
     color:white;
     text-decoration:none;
 }
-a:hover, a:active{
-    color:white;
+nav>a:hover{
     font:900;
 }
 
