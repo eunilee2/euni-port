@@ -30,6 +30,7 @@ h3{
 h4{
     font-size:3em;
     width:fit-content;
+    margin-bottom:0%;
 }
 p{
     font-size:2rem;
@@ -39,7 +40,7 @@ a{
     color:white;
     text-decoration:none;
 }
-#navclass>a:hover>p{
+a:hover{
     font-weight:1000;
 }
 
@@ -71,4 +72,21 @@ footer{
     width:94%;
     margin:auto auto;
     display:block;
+}
+#contact-info, #social-media{
+    display:flex;
+    justify-content:flex-start;
+}
+.contact-select{
+    width:fit-content;
+    margin-right:15%;
+}
+.media-select{
+    width:4vw;
+    margin-right:2vw;
+}
+
+.linkedin, .github, .mail{
+    width:100%;
+    height:auto;
 }
