@@ -70,6 +70,7 @@ nav{
 /* Footer */
 footer{
     width:94%;
+    height:auto;
     margin:auto auto;
     display:block;
 }
@@ -89,4 +90,41 @@ footer{
 .linkedin, .github, .mail{
     width:100%;
     height:auto;
+}
+
+/* about */
+#about-content{
+    display:flex;
+    justify-content:flex-end;
+    float:left;
+    margin:3%;
+    margin-top:7%;
+}
+.about-img{
+    width:40vw;
+}
+.eunice{
+    width:100%;
+    object-fit:cover;
+    border-radius:7%;
+}
+.about-bio{
+    margin-left:3%;
+}
+.about-bio>h4{
+    width:35vw;
+}
+
+button{
+    margin:5% 10% 5% 0%;
+    background-color:black;
+    border:2px solid white;
+    color:white;
+    padding:2% 2.5% 2% 2.5%;
+    border-radius:20px;
+    transition-duration:0.4s;
+}
+button:hover{
+    background-color:white;
+    color:black;
 }
