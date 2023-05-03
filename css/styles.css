@@ -39,7 +39,7 @@ a{
     color:white;
     text-decoration:none;
 }
-#navclass>a:hover{
+#navclass>a:hover>p{
     font-weight:1000;
 }
 
