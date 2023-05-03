@@ -1,4 +1,4 @@
-@media screen and (max-width:500px){
+@media screen and (max-width:400px){
     body{
         width:100vw;
         height:100vh;
@@ -7,10 +7,10 @@
         overflow:hidden;
     }
     h1,h2,h3,h4,p{
-        color:blue;
+        color:violet;
     }
     a{
-        color:blue;
+        color:violet;
         text-decoration:none;
     }
     #navclass>a:hover{
