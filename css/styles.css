@@ -5,8 +5,8 @@ a{
     color:white;
     text-decoration:none;
 }
-nav>a:hover{
-    font:900;
+#navclass>a:hover{
+    font-weight:1000;
 }
 
 body{
