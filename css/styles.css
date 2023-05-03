@@ -128,3 +128,24 @@ button:hover{
     background-color:white;
     color:black;
 }
+
+/* school */
+#school-content{
+    margin-left:3%;
+}
+#school-div{
+    display:flex;
+    justify-content:flex-start;
+}
+#coursework, #extracurriculars{
+    width:22vw;
+    height:auto;
+    margin-right:15%;
+}
+ul, li{
+    color:white;
+    size:100%;
+}
+ul li::marker{
+    font-size:3rem;
+}
