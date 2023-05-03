@@ -7,17 +7,20 @@ body{
     margin:0;
     background:black;
     overflow-x:hidden;
+    display:block;
 }
 h1,h2,h3,h4,p{
     color:white;
 }
 h1{
     font-size:13rem;
+    font-family:'Prata', serif;
     width:fit-content;
     margin:15% auto 5% 3%;
 }
 h2{
     font-size:7rem;
+    font-family:'Prata', serif;
     width:fit-content;
     margin-top:2%;
     margin-left:3%;
@@ -25,15 +28,19 @@ h2{
 }
 h3{
     font-size:6em;
+    font-family:'Inter', sans-serif;
     width:fit-content;
+    margin-bottom:0%;
 }
 h4{
     font-size:3em;
+    font-family:'Inter', sans-serif;
     width:fit-content;
     margin-bottom:0%;
 }
 p{
     font-size:2rem;
+    font-family:'Inter', sans-serif;
     width:fit-content;
 }
 a{
@@ -74,6 +81,9 @@ footer{
     margin:auto auto;
     display:block;
 }
+hr{
+    width:100%;
+}
 #contact-info, #social-media{
     display:flex;
     justify-content:flex-start;
@@ -83,7 +93,7 @@ footer{
     margin-right:15%;
 }
 .media-select{
-    width:4vw;
+    width:3vw;
     margin-right:2vw;
 }
 
@@ -128,7 +138,9 @@ button:hover{
     background-color:white;
     color:black;
 }
-
+input[type=button]{
+    font-family:'Inter', sans-serif;
+}
 /* school */
 #school-content{
     margin-left:3%;
@@ -138,7 +150,7 @@ button:hover{
     justify-content:flex-start;
 }
 #coursework, #extracurriculars{
-    width:22vw;
+    width:20vw;
     height:auto;
     margin-right:15%;
 }
