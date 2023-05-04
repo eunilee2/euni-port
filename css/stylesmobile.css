@@ -22,6 +22,9 @@
         margin-left:5%;
         margin-bottom:5%;
     }
+    h4{
+        font-size:4rem;
+    }
     p{
         font-size:4rem;
     }
@@ -125,7 +128,18 @@
     }
     /* footer */
     footer{
+        margin-top:5%;
+    }
+    #contact-info{
         display:none;
+    }
+    .media-select{
+        width:15vw;
+        margin-top:5%;
+    }
+    #social-media>div>p{
+        font-size:2rem;
+        margin: 50% 0% 50% 0%;
     }
 
 }
