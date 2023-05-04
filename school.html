@@ -29,11 +29,7 @@
         </nav>
         <div id="container">
             <div id="school-content">
-                <div class="school-bio">
-                    <h3>Carnegie Mellon University</h3>
-                    <h4>Bachelors of Science in Informations Systems</h4>
-                    <h4>Class of 2026</h4>
-                </div>
+                <span id="typedSchool"></span>
                 <div id="school-details">
                     <div id="coursework">
                         <h4>Coursework</h4>
@@ -75,4 +71,11 @@
     <script src="js/jquery.lettering.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r123/three.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.21/vanta.birds.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed=new Typed('#typedSchool',{
+            strings:['Carnegie Mellon University^1000\n BS in Information Systems ^1000\n Class of 2026'],
+            typeSpeed:75,
+        });
+  </script>
 </html>

@@ -29,13 +29,13 @@
         </nav>
         <div id="container">
             <div id="about-content">
-                <div class="about-img"><img class="eunice" src="images/eunice.png" alt="eunice profile photo"></div>
-                <div class="about-bio">
-                    <span id="typedSpan"><h3>Hi there!</h3></span>
-                    <h4>I'm a rising sophomore at Carnegie Mellon. I'm interested in product development, research, and user experience.</h4>
-                    <h4>Feel free to reach out to me!</h4>
-                    <button onclick="window.open('resume.pdf');">Resume</button>
+                <div class="about-img">
+                    <img class="eunice" src="images/eunice.png" alt="eunice profile photo">
+                    <div class="transition">
+                        <div class="resume"><a onclick="window.open('resume.pdf');">Resume</a></div>
+                    </div>
                 </div>
+                <span id="typedSpan"></span>
             </div>
         </div>
         <footer>
@@ -62,8 +62,9 @@
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
             var typed=new Typed('#typedSpan',{
-                strings:['Hi there!'],
+                strings:["Hi there!\n `I'm a rising sophomore at Carnegie Mellon.` \n `I'm interested in product development,` \n`research, and user experience.` \n`Feel free to reach out to me!`"],
                 typeSpeed:75,
+                backSpeed:50,
             });
       </script>
 </html>
