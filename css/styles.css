@@ -247,5 +247,56 @@ ul, li{
 ul li::marker{
     font-size:3rem;
 }
-
-
+/* Projects */
+#carouselProj{
+    width:75vw;
+    height:100%;
+    margin:3% auto 0% auto;
+    position: relative;
+    overflow:hidden;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    vertical-align: middle;
+    transition: all 0.6s ease-in-out;
+}
+#carouselProj>button{
+    margin:0% 2% 0% 2%;
+    border:none;
+}
+#carouselProj>button:active{
+    background-color:black;
+}
+#carouselProj.slick-track{
+    width:fit-content;
+}
+#project1, #project2{
+    width:100%;
+    height:auto;
+    margin:0% 0% 0% 0%;
+    padding:1% 3% 1% 3%;
+    border:2px solid white;
+    background-color:black;
+    border-radius:30px;
+    display:flex;
+    justify-content:flex-start;
+}
+#project1>img{
+    width:60%;
+    margin:0% 0% 0% 0%;
+}
+#project2>img{
+    width:65%;
+    margin:0% 0% 0% 0%;
+}
+.project-details{
+    width:20vw;
+    position:absolute;
+    bottom:25%;
+    left:60%;
+}
+.project-details>button{
+    font-size:2rem;
+}
