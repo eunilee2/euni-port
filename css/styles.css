@@ -199,11 +199,25 @@ input[type=button]{
     color:white;
     font-family:'Inter', sans-serif;
     width:50vw;
+    height:60vh;
     margin:10% 0% 0% 0%;
 }
-#school-details{
+#board{
     width:fit-content;
     margin: auto auto;
+    position: relative;
+    overflow:hidden;
+}
+.card{
+    width:20vw;
+    height:70vh;
+    position: absolute;
+    top:25%;
+    left:75%;
+    border-radius:5%;
+    border: 2px solid white;
+    transform: translateX(50%) translateY(-50%);
+    background-color:white;
 }
 #coursework, #extracurriculars{
     width:20vw;

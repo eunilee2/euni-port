@@ -30,8 +30,9 @@
         <div id="container">
             <div id="school-content">
                 <span id="typedSchool"></span>
-                <div id="school-details">
-                    <div id="coursework">
+                <div id="board">
+                    <div class="card"></div>
+                    <div class="card">
                         <h4>Coursework</h4>
                         <ul>
                             <li><p>Information Milieux</p></li>
@@ -39,7 +40,7 @@
                             <li><p>Fundamentals of Programming</p></li>
                         </ul>
                     </div>
-                    <div id="extracurriculars">
+                    <div class="card">
                         <h4>Extracurriculars</h4>
                         <ul>
                             <li><p>Women in IS</p></li>
@@ -72,6 +73,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r123/three.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.21/vanta.birds.min.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://cdnjs.com/libraries/hammer.js/"></script>
     <script>
         var typed=new Typed('#typedSchool',{
             strings:['Carnegie Mellon University^1000\n BS in Information Systems ^1000\n Class of 2026'],
