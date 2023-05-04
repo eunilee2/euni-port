@@ -228,6 +228,11 @@ input[type=button]{
 }
 #carousel.slick-track{
     width:fit-content;
+    margin:0% 0% 0% 0%;
+}
+#coursework>.slick-list .draggable{
+    width:fit-content;
+    margin:0% 0% 0% 0%;
 }
 #coursework, #extracurriculars{
     width:70%;
