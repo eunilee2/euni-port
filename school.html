@@ -10,6 +10,7 @@
         <link rel="stylesheet" media="all" type="text/css" href="css/styles.css">
         <link rel="stylesheet" media="screen and (max-width:390px)" href="css/stylesmobile.css">
         <link rel="stylesheet" media="all" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
         
         <title>Eunice Lee 🤍 </title>
 
@@ -30,9 +31,13 @@
         <div id="container">
             <div id="school-content">
                 <span id="typedSchool"></span>
-                <div id="board">
-                    <div class="card"></div>
-                    <div class="card">
+                <div id="carousel">
+                    <div class="fade">
+                        <div>your content</div>
+                        <div>my content</div>
+                        <div>the content</div>
+                    </div>
+                    <div id="coursework">
                         <h4>Coursework</h4>
                         <ul>
                             <li><p>Information Milieux</p></li>
@@ -40,13 +45,14 @@
                             <li><p>Fundamentals of Programming</p></li>
                         </ul>
                     </div>
-                    <div class="card">
+                    <div id="extracurriculars">
                         <h4>Extracurriculars</h4>
                         <ul>
                             <li><p>Women in IS</p></li>
                             <li><p>Undergraduate Student Senate</p></li>
                             <li><p>Society of Women Engineers</p></li>
                         </ul>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -66,18 +72,32 @@
                 <div><p>&copy; 2023 Eunice Lee</p></div>
             </div>
         </footer>
+        <script src="js/script.js"></script>
+        <!-- <script src="js/jquery-3.6.4.min.js"></script>
+        <script src="js/jquery.lettering.js"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r123/three.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.21/vanta.birds.min.js"></script>
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="js/slick.min.js"></script>
+        
+        <script>
+            var typed=new Typed('#typedSchool',{
+                strings:['Carnegie Mellon University^1000\n BS in Information Systems ^1000\n Class of 2026'],
+                typeSpeed:75,
+            });
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.fade').slick({
+                    dots: true,
+                    infinite: true,
+                    speed: 500,
+                    fade: true,
+                    cssEase: 'linear'
+                });
+            });
+        </script>
     </body>
-    <script src="js/script.js"></script>
-    <!-- <script src="js/jquery-3.6.4.min.js"></script>
-    <script src="js/jquery.lettering.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r123/three.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.21/vanta.birds.min.js"></script>
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script src="https://cdnjs.com/libraries/hammer.js/"></script>
-    <script>
-        var typed=new Typed('#typedSchool',{
-            strings:['Carnegie Mellon University^1000\n BS in Information Systems ^1000\n Class of 2026'],
-            typeSpeed:75,
-        });
-  </script>
 </html>
