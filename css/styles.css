@@ -37,12 +37,19 @@ h3{
     width:fit-content;
     margin-bottom:0%;
 }
-#typedSpan{
+#typedAbout{
     font-size:6em;
     color:white;
     font-family:'Inter', sans-serif;
-    width:35vw;
-    margin:10% 0% 0% 0%;
+    width:40vw;
+    margin:10% 10% 0% 0%;
+}
+#typedSpan{
+    font-size:4em;
+    color:white;
+    font-family:'Inter', sans-serif;
+    width:40vw;
+    margin:auto 0% auto 5%;
 }
 h4{
     font-size:3em;
@@ -120,7 +127,7 @@ hr{
     justify-content:flex-end;
     float:left;
     margin:3%;
-    margin-top:7%;
+    margin-top:5%;
 }
 .about-img{
     width:40vw;
@@ -147,7 +154,7 @@ hr{
     border-radius:35px;
     border: 2px solid white;
     position: absolute;
-    top: 25%;
+    top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -188,7 +195,7 @@ input[type=button]{
     justify-content:flex-start;
 }
 #typedSchool{
-    font-size:4em;
+    font-size:6em;
     color:white;
     font-family:'Inter', sans-serif;
     width:50vw;
