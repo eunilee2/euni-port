@@ -22,6 +22,12 @@
         margin-left:5%;
         margin-bottom:5%;
     }
+    #navclass{
+        display:none;
+    }
+    #navclass:target{
+        display:block;
+    }
     h4{
         font-size:4rem;
     }
