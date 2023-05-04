@@ -18,7 +18,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap" rel="stylesheet">
     </head>
-    <body>
+    <body id="vantajs">
         <header>
             <h2>projects</h2>
         </header>
@@ -62,4 +62,23 @@
     <script src="js/jquery.lettering.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r123/three.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.21/vanta.birds.min.js"></script>
+    <script>
+        VANTA.BIRDS({
+            el: "#vantajs",
+            mouseControls: false,
+            touchControls: false,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            backgroundColor: 0x0,
+            color1: 0x101012,
+            color2: 0x0,
+            birdSize: 0.50,
+            wingSpan: 0.50,
+            separation: 100.00,
+            speedLimit:1.00
+        })
+    </script>
 </html>
