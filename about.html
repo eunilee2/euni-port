@@ -18,7 +18,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap" rel="stylesheet">
     </head>
-    <body>
+    <body id="vantajs">
         <header>
             <h2>about</h2>
         </header>
@@ -65,5 +65,24 @@
                 strings:["Hi there! My name is Eunice Lee, a rising sophomore at Carnegie Mellon.","I'm interested in research and user experience. Feel free to reach out to me!"],
                 typeSpeed:75,
             });
-      </script>
+    </script>
+    <script>
+    VANTA.BIRDS({
+        el: "#vantajs",
+        mouseControls: false,
+        touchControls: false,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        backgroundColor: 0x0,
+        color1: 0x101012,
+        color2: 0x0,
+        birdSize: 0.50,
+        wingSpan: 0.50,
+        separation: 100.00,
+        speedLimit:1.00
+    })
+    </script>
 </html>

@@ -19,7 +19,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap" rel="stylesheet">
     </head>
-    <body>
+    <body id="vantajs">
         <header>
             <h2>school</h2>
         </header>
@@ -30,13 +30,9 @@
         </nav>
         <div id="container">
             <div id="school-content">
+
                 <span id="typedSchool"></span>
                 <div id="carousel">
-                    <div class="fade">
-                        <div>your content</div>
-                        <div>my content</div>
-                        <div>the content</div>
-                    </div>
                     <div id="coursework">
                         <h4>Coursework</h4>
                         <ul>
@@ -53,9 +49,9 @@
                             <li><p>Society of Women Engineers</p></li>
                         </ul>
                     </div>
-                    </div>
                 </div>
             </div>
+            
         </div>
         <footer>
             <hr>
@@ -90,14 +86,33 @@
         </script>
         <script type="text/javascript">
             $(document).ready(function(){
-                $('.fade').slick({
-                    dots: true,
+                $('#carousel').slick({
+                    dots: false,
                     infinite: true,
                     speed: 500,
                     fade: true,
                     cssEase: 'linear'
                 });
             });
+        </script>
+        <script>
+            VANTA.BIRDS({
+                el: "#vantajs",
+                mouseControls: false,
+                touchControls: false,
+                gyroControls: false,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                scale: 1.00,
+                scaleMobile: 1.00,
+                backgroundColor: 0x0,
+                color1: 0x101012,
+                color2: 0x0,
+                birdSize: 0.50,
+                wingSpan: 0.50,
+                separation: 100.00,
+                speedLimit:1.00
+            })
         </script>
     </body>
 </html>
