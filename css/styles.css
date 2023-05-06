@@ -247,7 +247,7 @@ input[type=button]{
 }
 ul, li{
     color:white;
-    size:100%;
+    resize:100%;
 }
 ul li::marker{
     font-size:3rem;
