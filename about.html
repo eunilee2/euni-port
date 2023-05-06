@@ -34,7 +34,7 @@
                 </div>
                 <div class="about-bio">
                     <span id="typedSpan"></span>
-                    <a class="resume" href="https://drive.google.com/file/d/1yiO01_vAk_2IylqXpNE1bwNFtP_qgkoW/view?usp=sharing" target="_blank">Resume</a>
+                    <span><button id="resume" class="resume" onclick="window.open('https://drive.google.com/file/d/1yiO01_vAk_2IylqXpNE1bwNFtP_qgkoW/view?usp=sharing','_blank');">Resume</button></span>
                 </div>
                 
             </div>
@@ -82,5 +82,9 @@
         separation: 100.00,
         speedLimit:1.00
     })
+    </script>
+    <script>
+        const button1 = document.getElementById("resume");
+        button1.disabled=false;
     </script>
 </html>

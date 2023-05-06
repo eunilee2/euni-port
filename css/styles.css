@@ -149,9 +149,7 @@ hr{
     transition: .5s ease;
     background-color: black;
 } */
-.resume{
-    background-color:black;
-    color:white;
+button.resume{
     font-size:2rem;
     font-family:'Inter', sans-serif;
     padding:2% 4% 2% 4%;
@@ -159,17 +157,7 @@ hr{
     margin:0% 0% 0% 0%;
     border-radius:35px;
     border: 2px solid white;
-    /* position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%); */
     text-align: center;
-}
-.resume>a:hover{
-    background-color:white;
-    color:black;
 }
 .eunice{
     width:100%;
