@@ -63,7 +63,7 @@ h4{
     margin-bottom:0%;
 }
 p{
-    font-size:2rem;
+    font-size:1.75rem;
     font-family:'Work Sans', sans-serif;
     width:fit-content;
     font-weight:300;
@@ -83,7 +83,7 @@ nav{
 #navclass{
     display:flex;
     justify-content:space-between;
-    padding:1% 1% 1% 1%;
+    padding:2% 1% 1% 1%;
 }
 .nav-select{
     margin:0% 1% 0% 2%;
