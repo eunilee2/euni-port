@@ -1,6 +1,6 @@
 export const Footer = () => {
   return (
-    <footer className="container py-12 relative border-t border-border mt-12 pt-8 flex flex-wrap justify-between items-center">
+    <footer className="container py-12 relative border-t border-border mt-12 pt-8 flex flex-wrap justify-between items-center ml-5">
       <p>
         Made with 🍵 & 💭
       </p>

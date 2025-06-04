@@ -30,23 +30,28 @@ function App() {
 
   const variants = {
     default: {
-      x: mousePosition.x - 16,
-      y: mousePosition.y - 16,
+      x: mousePosition.x,
+      y: mousePosition.y,
     },
-    text: {
-      height: 150,
-      width: 150,
-      x: mousePosition.x - 75,
-      y: mousePosition.y - 75,
-      backgroundColor: "yellow",
-      mixBlendMode: "difference"
-    }
+    // text: {
+    //   height: 150,
+    //   width: 150,
+    //   x: mousePosition.x - 75,
+    //   y: mousePosition.y - 75,
+    //   backgroundColor: "yellow",
+    //   mixBlendMode: "difference"
+    // }
   }
-  const textEnter = () => setCursorVariant("text");
-  const textLeave = () => setCursorVariant("default");
+  // const textEnter = () => setCursorVariant("text");
+  // const textLeave = () => setCursorVariant("default");
 
   return (
     <>
+      <motion.div
+        className='cursor'
+        variants={variants}
+        animate={cursorVariant}
+      />
       <BrowserRouter>
         <Routes>
           {/* <Route index /> */}
@@ -54,11 +59,6 @@ function App() {
           <Route path="/*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
-      <motion.div
-        className='cursor'
-        variants={variants}
-        animate={cursorVariant}
-      />
     </>
   )
 }

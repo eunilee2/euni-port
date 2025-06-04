@@ -7,7 +7,7 @@ import { Footer } from "../components/Footer";
 
 export const Home = () => {
     return (
-        <div className="min-h-screen bg-background overflow-x-hidden container">
+        <div className="min-h-screen bg-background container">
             {/* Theme Toggle Button */}
 
             {/* Background Effects */}

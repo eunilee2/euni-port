@@ -1,6 +1,7 @@
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
+import favicon from "../../public/eunice_favicon.svg";
 
 const navItems = [
   { name: "work", href: "#Work" },
@@ -28,13 +29,12 @@ export const Navbar = () => {
       )}
     >
       <div className="container flex items-center justify-between">
-        <a
-          className="text-xl font-bold text-primary flex items-center"
-          href="#hero"
-        >
-          <span className="relative z-10">
-            Eunice Lee
-          </span>
+        <a href="#landing">
+          <img
+            src={favicon}
+            alt="Eunice Lee"
+            className="h-8 w-8 ml-5"
+          />
         </a>
 
         {/* desktop nav */}
@@ -48,10 +48,11 @@ export const Navbar = () => {
               {item.name}
             </a>
           ))}
+
+        </div>
           <a href="../../public/Eunice Lee Folio.pdf" download= "Eunice Lee Folio.pdf" className="text-primary hover:text-primary/80 transition-colors duration-300">
             resume
           </a>
-        </div>
 
         {/* mobile nav */}
 
