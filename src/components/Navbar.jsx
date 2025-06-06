@@ -1,12 +1,12 @@
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
-import favicon from "../../public/eunice_favicon.svg";
+import favicon from "/eunice_favicon.svg?url";
 
 const navItems = [
   { name: "work", href: "#Work" },
-  { name: "play", href: "#Play" },
-  { name: "about", href: "#About" }
+  { name: "about", href: "#About" },
+  { name: "connect", href: "#Connect" }
 ];
 
 export const Navbar = () => {

@@ -1,31 +1,28 @@
+import eunice_img from "../assets/eunice_sitting.jpg";
+
 export const About = () => {
   return (
-    <section id="About" className="max-w-2xl mx-auto py-16 px-4">
-      <h2 className="text-3xl font-bold mb-4 text-primary">About</h2>
-      <p className="mb-4 text-lg text-foreground/80">
-        Hi! I’m Eunice Lee, a creative technologist and designer passionate about building thoughtful, impactful digital experiences. With a background in both design and development, I love bridging the gap between beautiful visuals and seamless functionality.
-      </p>
-      <p className="mb-4 text-lg text-foreground/80">
-        My journey has taken me through UI/UX design, front-end development, and creative coding. I enjoy collaborating with others, learning new tools, and exploring how technology can be used for positive change.
-      </p>
-      <p className="mb-4 text-lg text-foreground/80">
-        When I’m not coding or designing, you’ll find me writing on Medium, curating playlists on Spotify, or experimenting with new art forms. I’m always open to new opportunities and collaborations!
-      </p>
-      <ul className="list-disc pl-6 mb-4 text-foreground/80">
-        <li>🎨 UI/UX Design & Prototyping</li>
-        <li>💻 Front-end Development (React, JavaScript, CSS)</li>
-        <li>📝 Writing & Content Creation</li>
-        <li>🎵 Music & Digital Art</li>
-      </ul>
-      <p className="text-lg">
-        <a
-          href="mailto:euniceylee@email.com"
-          className="text-primary underline hover:text-primary/80"
-        >
-          Let’s connect!
-        </a>
-      </p>
+    <section id="About" className="text-left max-w-8xl h-auto mx-auto px-12 py-12 text-[1.2rem]">
+      <div className="flex">
+        <div className="w-1/3">
+          <img
+            src={eunice_img}
+            alt="Eunice Lee"
+            className="rounded-[5vw] h-2/7 w-4/5 object-cover mt-4"
+          />
+          {/* <p>Experience</p> */}
+        </div>
+        <div className="flex-col w-2/3">
+          <h2 className="">Hey! Eunice here.</h2>
+          <p>I'm a senior at Carnegie Mellon University, studying Information Systems & Human-Computer Interaction.
+            <br />I previously worked with IBM, startups, and nonprofits in software development and designer roles.
+            <br />I'm open to roles in product, analytics, and design!
+          </p>
+          <p className="justify-end">
+            my dev toolkit
+          </p>
+        </div>
+      </div>
     </section>
-    
   );
 };

@@ -1,4 +1,5 @@
 @import "tailwindcss";
+/* @import "tailwindcss" prefix(tw); */
 
 @theme {
   --color-border: hsl(var(--border));
@@ -16,7 +17,7 @@
     --background: 210 40% 98%;
     --foreground: 222 47% 11%;
 
-    --card: 0 0% 100%;
+    --card: 210 0% 80%;
 
     --primary: 240 90% 40%;
     --primary-foreground: 210 40% 98%;
@@ -28,7 +29,7 @@
 
   }
 
-  .dark {
+  /* .dark {
     --background: 222 47% 4%;
     --foreground: 213 31% 91%;
 
@@ -38,9 +39,9 @@
     --primary-foreground: 213 31% 91%;
 
     --border: 217 33% 20%;
-  }
+  } */
 
-  .cursor {
+  /* .cursor {
   background-color: #111;
   height: 16px;
   width: 16px;
@@ -49,7 +50,7 @@
   top: 0%;
   left: 0%;
   pointer-events: none;
-  }
+  } */
 
   h1 {
     /* font-size: 19rem; */
@@ -65,7 +66,7 @@
 
   * {
     @apply border-border;
-    cursor: none !important;
+    /* cursor: none !important; */
     font-family: "Work Sans", sans-serif;
   }
 
@@ -105,4 +106,29 @@
   margin: 0 auto;
   padding: 0;
   text-align: center;
+}
+
+/* the marquee section */
+/* based off from tutorial by Jeroen */
+/* https://www.youtube.com/watch?v=uw5jVO1eNF8&t=27s&ab_channel=FrontendFYI%E2%80%93byJeroen */
+.marquee-text {
+  overflow: clip;
+}
+
+.marquee-text-track {
+  display: flex;
+  padding-left: 4.8rem;
+  gap: 4.8rem;
+  width: max-content;
+  height: max-content;
+  animation: marquee-move-text var(--speed, 10s) linear infinite var(
+      --direction,
+      forwards
+    );
+}
+
+@keyframes marquee-move-text {
+  to {
+    transform: translateX(-50%);
+  }
 }
