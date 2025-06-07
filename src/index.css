@@ -72,6 +72,7 @@
 
   html {
     @apply scroll-smooth;
+    scroll-padding: var(--scroll-padding, 5rem);
   }
 
   body {

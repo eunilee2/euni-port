@@ -2,7 +2,7 @@ import eunice_img from "../assets/eunice_sitting.jpg";
 
 export const About = () => {
   return (
-    <section id="About" className="text-left max-w-8xl h-auto mx-auto px-12 py-12 text-[1.2rem]">
+    <section id="About" className=" text-left max-w-8xl h-auto mx-auto px-12 py-12 text-[1.2rem]">
       <div className="flex">
         <div className="w-1/3">
           <img

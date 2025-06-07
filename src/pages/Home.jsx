@@ -6,8 +6,22 @@ import { Marquee } from "../components/Marquee";
 import { About } from "../components/About";
 import { Footer } from "../components/Footer";
 import { Spacer } from "../components/Spacer";
+import { useEffect } from "react";
 
 export const Home = () => {
+    // scroll to sections with the correct offset
+    useEffect(() => {
+        const navigation = document.querySelector("#navbar");
+        if (navigation) {
+            const navigationHeight= navigation.offsetHeight;
+            document.documentElement.style.setProperty(
+                "--scroll-padding",
+                `${navigationHeight}px`
+            );
+        }
+    }, []);
+
+
     return (
         <div className="bg-background">
             {/* Theme Toggle Button */}

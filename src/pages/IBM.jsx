@@ -1,8 +1,19 @@
+import { Navbar } from '../components/Navbar';
+import { Footer } from '../components/Footer'; 
+
 export const IBM = () => {
     return (
-        <div className="flex flex-col items-center justify-center h-screen bg-gray-100">
-            <h1 className="text-4xl font-bold mb-4">IBM Page</h1>
-            <p className="text-lg text-gray-700">This is the IBM page.</p>
+        <div className="bg-background">
+            <Navbar />
+            <section id="IBM" className="flex max-w-8xl mx-auto px-12 py-12 text-[1.2rem]">
+                <div className="bg-gray-800 w-1/3">
+                    <p className="text-white">this is ibm</p>
+                </div>
+                <div className="bg-red-800 w-2/3">
+                    <p className="text-white">this is ibm</p>
+                </div>
+            </section>
+            <Footer />
         </div>
     );
 }
