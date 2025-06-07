@@ -113,7 +113,7 @@
 /* based off from tutorial by Jeroen */
 /* https://www.youtube.com/watch?v=uw5jVO1eNF8&t=27s&ab_channel=FrontendFYI%E2%80%93byJeroen */
 .marquee-text {
-  overflow: clip;
+  overflow-x: clip;
 }
 
 .marquee-text-track {
@@ -122,7 +122,7 @@
   gap: 4.8rem;
   width: max-content;
   height: max-content;
-  animation: marquee-move-text var(--speed, 10s) linear infinite var(
+  animation: marquee-move-text var(--speed, 12s) linear infinite var(
       --direction,
       forwards
     );

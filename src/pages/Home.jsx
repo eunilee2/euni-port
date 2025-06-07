@@ -16,7 +16,7 @@ export const Home = () => {
             const navigationHeight= navigation.offsetHeight;
             document.documentElement.style.setProperty(
                 "--scroll-padding",
-                `${navigationHeight}px`
+                `${navigationHeight*1.3}px`
             );
         }
     }, []);
@@ -29,7 +29,7 @@ export const Home = () => {
             {/* Background Effects */}
 
             {/* Navbar */}
-            <Navbar />
+            <Navbar className="fixed"/>
             {/* Main Content*/}
             <Landing />
             <Spacer />

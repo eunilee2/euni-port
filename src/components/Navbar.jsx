@@ -4,9 +4,9 @@ import { useEffect, useState } from "react";
 import favicon from "/eunice_favicon.svg?url";
 
 const navItems = [
-  { name: "work", href: "#Work" },
-  { name: "about", href: "#About" },
-  { name: "connect", href: "#Connect" }
+  { name: "work", href: "/#Work" },
+  { name: "about", href: "/#About" },
+  { name: "connect", href: "/#Connect" }
 ];
 
 export const Navbar = () => {
@@ -25,12 +25,12 @@ export const Navbar = () => {
     <nav
       id="navbar"
       className={cn(
-        "fixed w-full z-40 transition-all duration-300",
+        "w-full z-40 transition-all duration-300",
         isScrolled ? "py-3 bg-background/80 backdrop-blur-md" : "py-5"
       )}
     >
       <div className="container flex items-center justify-between">
-        <a href="#landing">
+        <a href="/#landing">
           <img
             src={favicon}
             alt="Eunice Lee"

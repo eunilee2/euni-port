@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Home } from "./pages/home";
 import { IBM } from "./pages/IBM";
+import  { IBM2 } from "./pages/IBM2";
 import { NotFound } from "./pages/NotFound";
 import { Toaster } from "@/components/ui/toaster";
 import { useEffect, useState } from "react";
@@ -65,6 +66,7 @@ function App() {{
           {/* <Route index /> */}
           <Route index element={<Home />} />
           <Route path="/IBM" element={<IBM />} />
+          <Route path="IBM2" element={<IBM2 />} />
           <Route path="/*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

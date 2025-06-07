@@ -91,7 +91,7 @@ export const Marquee = () => {
           document.body
         )
       } */}
-      <div className="marquee-text-track text-black text-4xl hover:text-primary select-none">
+      <div className="marquee-text-track text-black text-6xl hover:text-primary select-none">
         <p>{email}</p>
         <p>{email}</p>
         <p>{email}</p>
