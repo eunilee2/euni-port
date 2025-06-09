@@ -3,7 +3,7 @@ import { Footer } from '../components/Footer';
 import eunice_img from '../assets/eunice_sitting.jpg';
 import { useEffect } from 'react';
 
-export const IBM2 = () => {
+export const SLZ = () => {
 
     return (
         <div className="bg-background">
@@ -18,7 +18,8 @@ export const IBM2 = () => {
             
                 {/* Sidebar */}
                 <aside className="w-1/3 bg-red-100 text-left text-[1.2 rem] px-8 py-12 sticky top-10 self-start h-screen">
-                    <h2 className="text-black text-[2rem] flex-1">Scheduling Coverage @IBM</h2>
+                    <h2 className="text-black text-[2rem] flex-1">Smart Loading Zones <br/> @The City of Pittsburgh</h2>
+                    <p>Reshaping Urban Curbside Systems Through Stakeholder-Centered Research</p>
                     <div className="text-black absolute bottom-20 list-none">
                         <li><a href="#problem">problem</a></li>
                         <li><a href="#impact">impact</a></li>

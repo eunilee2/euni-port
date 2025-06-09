@@ -1,23 +1,41 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import roi_du_pain_video from "../assets/roi_du_pain.mp4";
+
 export const Work = () => {
   return (
     <section id="Work" className="max-w-8xl mx-auto px-12">
       {/* <h2 className="text-3xl font-bold mb-8 text-primary">Selected Work</h2> */}
       <div className="grid gap-30 grid-cols-1">
-        {/* Project 1 */}
-        <div className="bg-card rounded-lg shadow p-6 flex flex-col w-full min-h-[80vh] justify-center">
-          <h3 className="text-xl font-semibold mb-2">Portfolio Website</h3>
-          <p className="mb-2 text-foreground/80">
-            Designed and developed a personal portfolio using React and Tailwind CSS to showcase my projects, writing, and creative work.
-          </p>
-          <a
-            href="https://github.com/euniceylee/portfolio"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-primary underline hover:text-primary/80"
-          >
-            View on GitHub
-          </a>
-        </div>
+        {/* Project 1: Roi Du Pan */}
+        <a
+          href="/RDP"
+          // target="_blank"
+          // rel="noopener noreferrer"
+          className="text-primary underline hover:text-primary/80"
+        >
+        
+          <div className="bg-card rounded-lg shadow p-6 flex flex-col w-full min-h-[80vh] justify-end text-left relative overflow-hidden">
+            {/* Background Video */}
+            <video
+              className="absolute inset-0 w-full h-full object-cover opacity-100"
+              autoPlay
+              loop
+              muted
+              playsInline
+            >
+              <source src={roi_du_pain_video} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            {/* Card Content */}
+            <div className="relative z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <h3 className="text-xl font-semibold mb-2 text-white">Roi du Pain Bakery Application</h3>
+              <p className="mb-2 text-foreground/80">
+                Designed and developed a personal portfolio using React and Tailwind CSS to showcase my projects, writing, and creative work.
+              </p>
+            </div>
+
+          </div>
+        </a>
 
         {/* Project 2 */}
         <div className="bg-card rounded-lg shadow p-6 flex flex-col w-full min-h-[80vh] justify-center">
