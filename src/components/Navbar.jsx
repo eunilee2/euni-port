@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
-import favicon from "/eunice_favicon.svg?url";
+import favicon from "../assets/eunice_favicon.svg?url";
 
 const navItems = [
   { name: "work", href: "/#Work" },
