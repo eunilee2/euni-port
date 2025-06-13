@@ -39,7 +39,6 @@ export const Home = () => {
             {/* <Spacer /> */}
             <Connect />
             <Marquee />
-
             {/* Footer */}
             <Footer />
         </div>

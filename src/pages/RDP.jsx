@@ -3,6 +3,10 @@ import { Footer } from '../components/Footer';
 import eunice_img from '../assets/eunice_sitting.jpg';
 import { useEffect } from 'react';
 import roi_du_pain_video from "../assets/roi_du_pain.mp4";
+import rdp_feature_1 from '../assets/rdp feature 1.mp4';
+import rdp_feature_2 from '../assets/rdp feature 2.mp4';
+import rdp_feature_3 from '../assets/rdp feature 3.mp4';
+import rdp_feature_4 from '../assets/rdp feature 4.mp4';
 
 export const RDP = () => {
     const developmentProcess = [
@@ -53,6 +57,7 @@ export const RDP = () => {
                     <h2 className="text-black text-[2rem] flex-1">Full Stack Application <br/> Roi du Pain</h2>
                     <p>A comprehensive bakery web app with registration and login, item showcase, order checkout with payment. </p>
                     <p>Built with Ruby on Rails framework, embedded ruby in HTML5 for the UI.</p>
+                    <p>Find the source code on Github</p>
                     <div className="text-black absolute bottom-20 list-none">
                         <li><a href="#challenge">challenge</a></li>
                         <li><a href="#solution">solution</a></li>
@@ -102,6 +107,39 @@ export const RDP = () => {
                             <p>We developed a full-stack web application using Ruby on Rails 7.0.4 and Ruby 3.1.4 to support a scalable and role-driven bakery ordering system. The application enables customers to register, manage accounts and addresses, place orders, and view order histories. For the operational staff, it provides automatically generated daily baking and shipping lists, while managers are equipped with a dashboard to monitor and manage all facets of the business. The system also supports role-based authentication and authorization, encoded payment records, and flexible pricing models with historical tracking. Key user-facing views were designed using MaterializeCSS to ensure clarity, accessibility, and responsiveness.</p>
                         </div>
 
+                        <div>
+                            <h3 className="text-black text-2xl">Features</h3>
+                            <div>
+
+                            </div>
+                            <div>
+                                <video className="w-full h-auto mb-4" controls>
+                                    <source src={rdp_feature_1} type="video/mp4" />
+                                    Your browser does not support the video tag.
+                                </video>
+                                <video className="w-full h-auto mb-4" controls>
+                                    <source src={rdp_feature_2} type="video/mp4" />
+                                    Your browser does not support the video tag.
+                                </video>
+                                <video className="w-full h-auto mb-4" controls>
+                                    <source src={rdp_feature_3} type="video/mp4" />
+                                    Your browser does not support the video tag.
+                                </video>
+                                <video className="w-full h-auto mb-4" controls>
+                                    <source src={rdp_feature_4} type="video/mp4" />
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <ul className="list-none ml-6">
+                                <li>Customer registration and login with secure password hashing</li>
+                                <li>Order placement with item selection and quantity management</li>
+                                <li>Role-based access control for customers, bakers, shippers, and managers</li>
+                                <li>Daily baking and shipping lists generated from orders</li>
+                                <li>Responsive design using MaterializeCSS for a clean user interface</li>
+                                <li>Unit and integration tests using RSpec, Cucumber, and SimpleCov for 100% test coverage</li>
+                            </ul>
+                        </div>
+
                         <div id="process" className="text-black text-1xl">
                             <h3 className="text-black text-2xl">Process</h3>
                             <h3 className="text-black text-2xl">I followed a test-driven, multi-phase approach to build and integrate models, services, controllers, and views into a cohesive and maintainable Rails application.</h3>
@@ -118,7 +156,12 @@ export const RDP = () => {
                         <div id="reflection" className="text-black text-1xl">
                             <h3 className="text-black text-2xl">Reflection</h3>
                             <h3 className="text-black text-2xl">The project reinforced the value of test-driven development and modular design in building complex applications.</h3>
-                            <p>Through this project, I learned the importance of a structured, test-driven approach to software development. By writing tests first, we ensured that each component was robust and met business requirements before moving on to the next phase. The modular design allowed us to isolate functionality, making it easier to maintain and extend the application over time. Additionally, integrating user feedback early in the process helped us refine the user experience and ensure that the final product met both customer and operational needs.</p> 
+                            <p>
+                                This project taught me how to build a comprehensive Rails application from the ground up, while practicing best practices in MVC architecture, test-driven development, and modular service design. One of the most rewarding aspects was seeing how well-defined unit and integration tests could guide the development of both backend logic and user interfaces. It also underscored the importance of clean organization, especially in large team environments where context setup and refactoring play major roles in code clarity.
+                            </p>
+                            <p>
+                                By handling both customer-facing and internal administrative roles, I gained valuable insight into how different system users interact with the same dataset in unique ways. The iterative checkpoints ensured continual progress, and the constraints (like simulated payments and shipping caps) helped isolate and master key components without overwhelming scope creep. I feel more confident in tackling future full-stack projects with complex requirements, particularly in domains that intersect commerce, logistics, and role-based system management.
+                            </p>
 
                         </div>
                     </div>
