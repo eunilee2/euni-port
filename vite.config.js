@@ -7,7 +7,7 @@ import autoprefixer from 'autoprefixer'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: "/euni-port",
+  base: '/',
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
