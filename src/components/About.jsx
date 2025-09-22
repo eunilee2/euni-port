@@ -18,11 +18,11 @@ export const About = () => {
             <br />I previously worked with IBM, startups, and nonprofits in software development and designer roles.
             <br />I'm open to roles in product, analytics, and design!
           </p>
-          <p className="justify-end">
+          {/* <p className="justify-end">
             my dev toolkit
-          </p>
+          </p> */}
           <iframe
-            className="rounded-xl"
+            className="rounded-xl mt-4 mb-4"
             src="https://open.spotify.com/embed/playlist/2CoOM7q5OqExC0Miz0OqoM?utm_source=generator&theme=0"
             width="100%"
             height="152"

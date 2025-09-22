@@ -36,7 +36,7 @@ export const Work = () => {
             {/* Background Video */}
             <video
               ref={videoRef}
-              className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-300 pointer-events-none ${hovered ? "opacity-20" : "opacity-100"}`}
+              className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-300 pointer-events-none ${hovered ? "blur-sm" : "blur-none"}`}
               autoPlay
               loop
               muted
@@ -45,10 +45,13 @@ export const Work = () => {
               <source src={roi_du_pain_video} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
+            {/* Colored Overlay using primary color */}
+            <div className={`absolute inset-0 bg-primary transition-opacity duration-300 ${hovered ? "opacity-30" : "opacity-0"}`}></div>
+
             {/* Card Content */}
             <div className={`relative z-10 transition-opacity duration-300 no-underline ${hovered ? "opacity-100" : "opacity-0"}`}>
-              <h3 className="text-xl font-semibold mb-2 text-primary no-underline">Roi du Pain Bakery Application</h3>
-              <p className="mb-2 text-foreground/80 text-primary no-underline">
+              <h3 className="text-xl font-semibold mb-2 text-white mix-blend-difference no-underline">Roi du Pain Bakery Application</h3>
+              <p className="mb-2 text-white mix-blend-difference no-underline">
                 Designed and developed a personal portfolio using React and Tailwind CSS to showcase my projects, writing, and creative work.
               </p>
             </div>
@@ -56,8 +59,16 @@ export const Work = () => {
           </div>
         </a>
 
+        {/* WIP Section */}
+        <div className="bg-background rounded-lg p-6 flex flex-col w-full min-h-[10vh] justify-center">
+          <h3 className="text-xl font-semibold mb-2">More Projects Coming Soon!</h3>
+          <p className="mb-2 text-foreground/80">
+            Stay tuned for updates as I continue to add more of my work and case studies here.
+          </p>
+        </div>
+
         {/* Project 2 */}
-        <div className="bg-card rounded-lg shadow p-6 flex flex-col w-full min-h-[80vh] justify-center">
+        {/* <div className="bg-card rounded-lg shadow p-6 flex flex-col w-full min-h-[80vh] justify-center">
           <h3 className="text-xl font-semibold mb-2">UI/UX for Wellness App</h3>
           <p className="mb-2 text-foreground/80">
             Led the UI/UX design for a mobile wellness app, focusing on accessibility and user engagement. Collaborated with developers to bring the vision to life.
@@ -70,10 +81,10 @@ export const Work = () => {
           >
             View Case Study
           </a>
-        </div>
+        </div> */}
 
         {/* Project 3 */}
-        <div className="bg-card rounded-lg shadow p-6 flex flex-col w-full min-h-[80vh] justify-center">
+        {/* <div className="bg-card rounded-lg shadow p-6 flex flex-col w-full min-h-[80vh] justify-center">
           <h3 className="text-xl font-semibold mb-2">Creative Coding Experiments</h3>
           <p className="mb-2 text-foreground/80">
             Explored generative art and interactive visuals using p5.js and Three.js. Shared learnings and code on Medium and GitHub.
@@ -86,7 +97,7 @@ export const Work = () => {
           >
             Read Articles
           </a>
-        </div>
+        </div> */}
 
       </div>
 

@@ -22,6 +22,8 @@
     --primary: 240 90% 40%;
     --primary-foreground: 210 40% 98%;
 
+    --secondary: 210 40% 98%;
+
     --border: 214 32% 91%;
     /* width: screen; */
     scrollbar-gutter: stable both-edges;
