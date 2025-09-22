@@ -51,7 +51,7 @@ export const Navbar = () => {
           ))}
 
         </div>
-          <a href="public/Eunice Lee Folio.pdf" download= "Eunice Lee Folio.pdf" className="text-primary hover:text-primary/80 transition-colors duration-300">
+          <a href={`${import.meta.env.BASE_URL}Eunice Lee Folio.pdf`} download= "Eunice Lee Folio.pdf" className="text-primary hover:text-primary/80 transition-colors duration-300">
             resume
           </a>
 
