@@ -16,6 +16,7 @@
     "@gsap/react": "^2.1.2",
     "@radix-ui/react-toast": "^1.2.10",
     "@tailwindcss/vite": "^4.3.3",
+    "@vercel/analytics": "^2.0.1",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "gsap": "^3.13.0",
