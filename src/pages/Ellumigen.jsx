@@ -3,12 +3,12 @@ import { Footer } from '../components/Footer';
 import eunice_img from '../assets/eunice_sitting.jpg';
 import { useEffect } from 'react';
 import roi_du_pain_video from "../assets/roi_du_pain.mp4";
-// import rdp_feature_1 from '../assets/rdp feature 1.mp4';
-// import rdp_feature_2 from '../assets/rdp feature 2.mp4';
-// import rdp_feature_3 from '../assets/rdp feature 3.mp4';
-// import rdp_feature_4 from '../assets/rdp feature 4.mp4';
+// import Ellumigen_feature_1 from '../assets/Ellumigen feature 1.mp4';
+// import Ellumigen_feature_2 from '../assets/Ellumigen feature 2.mp4';
+// import Ellumigen_feature_3 from '../assets/Ellumigen feature 3.mp4';
+// import Ellumigen_feature_4 from '../assets/Ellumigen feature 4.mp4';
 
-export const RDP = () => {
+export const Ellumigen = () => {
     const developmentProcess = [
         {   title: "Model Construction", 
             description: "We began by modeling core entities such as Customer, Order, Item, and Employee, along with their relationships and scopes. Unit tests were written for all model logic using RSpec and SimpleCov to ensure 100% test coverage.", 
@@ -36,7 +36,7 @@ export const RDP = () => {
     return (
         <div className="bg-background">
             <Navbar className="relative"/>
-            <div id="RDP" className="relative overflow-hidden w-full h-[95dvh]">
+            <div id="Ellumigen" className="relative overflow-hidden w-full h-[95dvh]">
                 <video
                     className="absolute inset-0 w-full h-full object-cover opacity-100"
                     autoPlay
@@ -63,7 +63,7 @@ export const RDP = () => {
                         <li><a href="#solution">solution</a></li>
                         <li><a href="#process">process</a></li>
                         <li><a href="#reflection">reflection</a></li>
-                        <li><a href="#RDP">back to top</a></li>
+                        <li><a href="#Ellumigen">back to top</a></li>
                     </div>
                 </aside>
 
@@ -114,19 +114,19 @@ export const RDP = () => {
                             </div>
                             <div>
                                 {/* <video className="w-full h-auto mb-4" controls>
-                                    <source src={rdp_feature_1} type="video/mp4" />
+                                    <source src={Ellumigen_feature_1} type="video/mp4" />
                                     Your browser does not support the video tag.
                                 </video>
                                 <video className="w-full h-auto mb-4" controls>
-                                    <source src={rdp_feature_2} type="video/mp4" />
+                                    <source src={Ellumigen_feature_2} type="video/mp4" />
                                     Your browser does not support the video tag.
                                 </video>
                                 <video className="w-full h-auto mb-4" controls>
-                                    <source src={rdp_feature_3} type="video/mp4" />
+                                    <source src={Ellumigen_feature_3} type="video/mp4" />
                                     Your browser does not support the video tag.
                                 </video>
                                 <video className="w-full h-auto mb-4" controls>
-                                    <source src={rdp_feature_4} type="video/mp4" />
+                                    <source src={Ellumigen_feature_4} type="video/mp4" />
                                     Your browser does not support the video tag.
                                 </video> */}
                             </div>
