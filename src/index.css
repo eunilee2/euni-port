@@ -63,7 +63,7 @@
   }
 
   #landing {
-    margin-left: 0.5rem;
+    margin-left: 0;
   }
 
   * {
@@ -75,10 +75,11 @@
   html {
     @apply scroll-smooth;
     scroll-padding: var(--scroll-padding, 5rem);
+    overflow-x: hidden;
   }
 
   body {
-    @apply bg-background text-foreground transition-colors duration-300;
+    @apply bg-background text-foreground transition-colors duration-300 overflow-x-hidden;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
 }
@@ -120,8 +121,8 @@
 
 .marquee-text-track {
   display: flex;
-  padding-left: 4.8rem;
-  gap: 4.8rem;
+  padding-left: clamp(1rem, 5vw, 4.8rem);
+  gap: clamp(1rem, 5vw, 4.8rem);
   width: max-content;
   height: max-content;
   animation: marquee-move-text var(--speed, 12s) linear infinite var(

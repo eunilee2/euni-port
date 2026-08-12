@@ -4,6 +4,7 @@ import { IBM } from "./pages/IBM";
 import  { IBM2 } from "./pages/IBM2";
 import  { SLZ } from "./pages/SLZ";
 import  { RDP } from "./pages/RDP";
+import {Ellumigen} from "./pages/Ellumigen";
 import { NotFound } from "./pages/NotFound";
 import { Toaster } from "@/components/ui/toaster";
 import { useEffect, useState } from "react";

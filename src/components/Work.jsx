@@ -59,6 +59,22 @@ export const Work = () => {
           </div>
         </a>
 
+        {/* Project 2: Ellumigen */}
+          <div className="bg-card rounded-lg shadow p-6 flex flex-col w-full min-h-[80vh] justify-center">
+          <h3 className="text-xl font-semibold mb-2">Ellumigen Explorer: Designing Next-Generation Conversational AI Interfaces for Scientific Data Analysis</h3>
+          <p className="mb-2 text-foreground/80">
+            The standard chat UI paradigm is insufficient for the rich, complex, and iterative nature of scientific data exploration.
+          </p>
+          <a
+            href="https://medium.com/@eunicelee12814"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-primary underline hover:text-primary/80"
+          >
+            Read Articles
+          </a>
+        </div>
+
         {/* WIP Section */}
         <div className="bg-background rounded-lg p-6 flex flex-col w-full min-h-[10vh] justify-center">
           <h3 className="text-xl font-semibold mb-2">More Projects Coming Soon!</h3>
@@ -83,8 +99,8 @@ export const Work = () => {
           </a>
         </div> */}
 
-        {/* Project 3 */}
-        {/* <div className="bg-card rounded-lg shadow p-6 flex flex-col w-full min-h-[80vh] justify-center">
+        {/* Project 3
+        <div className="bg-card rounded-lg shadow p-6 flex flex-col w-full min-h-[80vh] justify-center">
           <h3 className="text-xl font-semibold mb-2">Creative Coding Experiments</h3>
           <p className="mb-2 text-foreground/80">
             Explored generative art and interactive visuals using p5.js and Three.js. Shared learnings and code on Medium and GitHub.
