@@ -72,6 +72,7 @@ function App() {{
           <Route path="IBM2" element={<IBM2 />} />
           <Route path="SLZ" element={<SLZ />} />
           <Route path="RDP" element={<RDP />} />
+          <Route path="Ellumigen" element={<Ellumigen />} />
           <Route path="/*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

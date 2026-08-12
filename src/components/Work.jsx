@@ -60,20 +60,42 @@ export const Work = () => {
         </a>
 
         {/* Project 2: Ellumigen */}
-          <div className="bg-card rounded-lg shadow p-6 flex flex-col w-full min-h-[80vh] justify-center">
-          <h3 className="text-xl font-semibold mb-2">Ellumigen Explorer: Designing Next-Generation Conversational AI Interfaces for Scientific Data Analysis</h3>
-          <p className="mb-2 text-foreground/80">
-            The standard chat UI paradigm is insufficient for the rich, complex, and iterative nature of scientific data exploration.
-          </p>
-          <a
-            href="https://medium.com/@eunicelee12814"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-primary underline hover:text-primary/80"
+        <a
+          href="/Ellumigen"
+          // target="_blank"
+          // rel="noopener noreferrer"
+          className="text-primary no-underline"
+        >
+          <div 
+            className="bg-card rounded-lg shadow p-6 flex flex-col w-full min-h-[80vh] justify-end text-left relative overflow-hidden no-underline"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
           >
-            Read Articles
-          </a>
-        </div>
+            {/* Background Video */}
+            <video
+              ref={videoRef}
+              className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-300 pointer-events-none ${hovered ? "blur-sm" : "blur-none"}`}
+              autoPlay
+              loop
+              muted
+              playsInline
+            >
+              <source src={roi_du_pain_video} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            {/* Colored Overlay using primary color */}
+            <div className={`absolute inset-0 bg-primary transition-opacity duration-300 ${hovered ? "opacity-30" : "opacity-0"}`}></div>
+
+            {/* Card Content */}
+            <div className={`relative z-10 transition-opacity duration-300 no-underline ${hovered ? "opacity-100" : "opacity-0"}`}>
+              <h3 className="text-xl font-semibold mb-2 text-white mix-blend-difference no-underline">Ellumigen Explorer</h3>
+              <p className="mb-2 text-white mix-blend-difference no-underline">
+                Designing Next-Generation Conversational AI Interfaces for Scientific Data Analysis
+              </p>
+            </div>
+
+          </div>
+        </a>
 
         {/* WIP Section */}
         <div className="bg-background rounded-lg p-6 flex flex-col w-full min-h-[10vh] justify-center">
