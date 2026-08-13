@@ -11,7 +11,7 @@ export const Marquee = () => {
   const cursorRef = useRef({ x: 0, y: 0 });
   const frameRef = useRef();
 
-  const email= 'eunicelee12814@gmail.com';
+  const email= 'hello@eunicelee.net';
 
   // mousetracking
   useEffect(() => {
